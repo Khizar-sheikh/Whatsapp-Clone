@@ -1,0 +1,31 @@
+.SidebarChat {
+  padding: 20px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 1ps solid #f6f6f6;
+  -webkit-border-radius: 1ps solid #f6f6f6;
+  -moz-border-radius: 1ps solid #f6f6f6;
+  -ms-border-radius: 1ps solid #f6f6f6;
+  -o-border-radius: 1ps solid #f6f6f6;
+}
+.SidebarChat:hover {
+  background-color: #ebebeb;
+}
+.css-1wlk0hk-MuiAvatar-root {
+  width: 24px !important;
+  height: 24px !important;
+  padding: 5px;
+  border-radius: 50% !important;
+  margin: 2px !important;
+  border: 1px solid black;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  -ms-border-radius: 50% !important;
+  -o-border-radius: 50% !important;
+}
+
+.sidebarChat__info > h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}

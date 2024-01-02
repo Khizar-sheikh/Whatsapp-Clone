@@ -1,0 +1,14 @@
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* WhatsApp background color */
+}
+
+.app__body {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  background-color: #f0f2f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
