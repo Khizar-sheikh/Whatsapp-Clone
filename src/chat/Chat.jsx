@@ -11,10 +11,17 @@ import SendIcon from '@mui/icons-material/Send';
 function Chat() {
 
     const [seed, setSeed] = useState();
+    const [input, setInput] = useState("")
 
     useEffect(() => {
         setSeed(Math.floor(Math.random() * 5000))
     }, [])
+
+    const sendMessage = (e) => {
+        e.preventDefault(); // Prevents the default form submission behavior
+        console.log("You Typed <<<", input);
+        setInput(""); // Clear the input field after submitting
+    };
 
     return (
         <div className="chat">
@@ -45,8 +52,8 @@ function Chat() {
                     Hey Guys
                     <span className="timestamp">3:52 pm</span>
                 </p>
-                <p className={`chat__message ${true && 'chat__reciver'}`}>
-                    <span className="chat__name">
+                <p className={`chat__message ${false && 'chat__reciver'}`}>
+                    <span className="chat__name" contentEditable>
                         John Doe
                     </span>
                     Hey Guys
@@ -55,11 +62,16 @@ function Chat() {
             </div>
             <div className="chat__footer">
                 <InsertEmoticonIcon />
-                <form>
-                    <input type="text" placeholder="Type a mesage" />
-                    <div className="sendbutton">
-                        <IconButton><SendIcon /></IconButton>
-                    </div>
+                <form onSubmit={sendMessage}>
+                    <input
+                        type="text"
+                        placeholder="Type a message"
+                        value={input}
+                        onChange={(e) => setInput(e.target.value)}
+                    />
+                    <IconButton type="submit">
+                        <SendIcon />
+                    </IconButton>
                 </form>
                 <MicIcon />
             </div>
