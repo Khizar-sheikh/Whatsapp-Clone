@@ -41,15 +41,15 @@
 .chat__message {
   padding: 10px;
   position: relative;
+  max-width: 400px; /* Set your desired maximum width */
   font-size: 16px;
   background-color: #ffffff;
   border-radius: 10px;
   width: fit-content;
   margin-bottom: 30px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  overflow-wrap: break-word; /* Allow word breaks */
+  word-wrap: break-word; /* Fallback for older browsers */
+  /* Add more styles as needed */
 }
 .chat__name {
   position: absolute;
@@ -61,7 +61,7 @@
   margin: 10px;
   font-size: xx-small;
 }
-.chat__reciver {
+.chat__reciever {
   margin-left: auto;
   background-color: #dcf8c6;
 }
@@ -93,6 +93,11 @@
 .chat__footer > .MuiSvgIcon-root {
   padding: 10px;
   color: gray;
+}
+
+.lastseen {
+  font-size: small !important;
+  margin-left: 2px;
 }
 
 @media (max-width: 786px) {
