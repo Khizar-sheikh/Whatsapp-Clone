@@ -20,12 +20,14 @@ npm start
 
 Open your browser and visit http://localhost:3000 to access the app.
 
-#Live Preview
-You can access the live preview of this WhatsApp clone at WhatsApp Clone Live Preview.
+# Live Preview
 
-#Features
-Google authentication for user login
-Chat timestamps to track messages
-Group chatting functionality
-Connect via link option
-UI resembling WhatsApp Web
+You can access the live preview of this WhatsApp clone at [WhatsApp Clone Live Preview](https://whatsapp-clone-99414.web.app).
+
+# Features
+
+- **Google authentication** for user login
+- **Chat timestamps** to track messages
+- **Group chatting** functionality
+- **Connect via link** option
+- UI resembling **WhatsApp Web**
